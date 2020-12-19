@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEEF1"
+    tools:context=".Activity.HomeSubMenuCatagory_Activity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.HomeMainCatagory_Activity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:id="@+id/toolbarsub"
+                    android:background="@color/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"
+                    app:titleTextColor="@color/colorBlack"
+                    app:subtitleTextColor="@color/colorBlack"/>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:spanCount="1"
+                android:layout_marginBottom="?attr/actionBarSize"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                android:id="@+id/sub_menu_listing_menu_recyclerview"/>
+
+
+        </LinearLayout>
+
+        <include layout="@layout/sheet_sub_menu"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

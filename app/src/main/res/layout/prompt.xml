@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/layout_root">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Delivery Info"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:background="@color/colorNewCard"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="true"/>
+
+
+            <EditText
+                android:id="@+id/newaddline1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/address_style"
+                android:hint="House No, Building Name" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Road Name, Area, Colony"
+                android:id="@+id/newaddline2"
+                android:layout_margin="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/address_style"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="City"
+                android:layout_margin="5dp"
+                android:id="@+id/newaddcity"
+                android:paddingLeft="10dp"
+                android:background="@drawable/address_style"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Pin code"
+                android:inputType="number"
+                android:maxLength="6"
+                android:id="@+id/newaddpincode"
+                android:layout_margin="5dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/address_style"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorNewCard"
+                android:text="Contact Info"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textAllCaps="true"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Name"
+                android:id="@+id/newaddname"
+                android:layout_margin="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/address_style"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="10-digit mobile number"
+                android:id="@+id/newaddnumber"
+                android:inputType="number"
+                android:maxLength="10"
+                android:layout_margin="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/address_style"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Alternate number"
+                android:id="@+id/newaddalternatenumber"
+                android:layout_margin="5dp"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="10dp"
+                android:background="@drawable/address_style"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use Previous Address"
+                android:id="@+id/usePrevious_address_checkbox"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Cancel"
+                android:id="@+id/newaddcancelbtn"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorNewRed"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@color/colorNewBlue"
+                android:text="Save"
+                android:layout_marginTop="10dp"
+                android:id="@+id/newaddsavebtn"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

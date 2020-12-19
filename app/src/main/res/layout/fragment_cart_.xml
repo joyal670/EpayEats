@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Cart_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sample"
+            android:text="Please Confirm your Orders Before Checkout"
+            android:textColor="@color/colorBlack"
+            android:textAllCaps="true"
+            android:textStyle="bold"/>
+
+        <ListView
+            android:layout_below="@+id/sample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cartListView"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="?attr/actionBarSize"/>
+
+        <Button
+            android:id="@+id/cartCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHECKOUT"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorNewBlue"
+            android:textAllCaps="true"
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/searchlayout"
+    android:background="@color/colorWhite"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/listview_menu_image1"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_weight="3.5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6.5"
+                android:layout_marginLeft="3dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/listview_menu_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="xxxx"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/listview_menu_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Unit"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="20">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Selling Price"
+                        android:textColor="@color/colorBlack"
+                        android:layout_weight="10"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/rupee" />
+
+                    <TextView
+                        android:id="@+id/listview_menu_selling_price"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="9"
+                        android:layout_gravity="center"
+                        android:gravity="left|center"
+                        android:textColor="@color/colorRed"
+                        android:text="price"/>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="20">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Offer Price"
+                        android:textColor="@color/colorBlack"
+                        android:layout_weight="10"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/rupee" />
+
+                    <TextView
+                        android:id="@+id/listview_menu_offer_price"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="9"
+                        android:layout_gravity="center"
+                        android:gravity="left|center"
+                        android:textColor="@color/colorGreen"
+                        android:text="offer price"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/listview_menu_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Description" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="2dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorRed"
+                    android:text="Delivery time with in 45 mins" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

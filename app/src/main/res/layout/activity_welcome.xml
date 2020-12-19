@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="10"
+    tools:context=".Activity.WelcomeActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:layout_margin="10dp"
+        android:id="@+id/view_pager"/>
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:id="@+id/dot1"
+        android:layout_marginTop="10dp"
+        app:dotsCornerRadius="8dp"
+        android:layout_gravity="center"
+        app:dotsSize="16dp"
+        app:dotsSpacing="4dp"
+        app:dotsColor="@color/colorNewRed"
+        app:dotsWidthFactor="2.5"
+        app:selectedDotColor="@color/colorNewBlue"
+        app:progressMode="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:text="Skip"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/welcome_activity_skip_btn"/>
+
+</LinearLayout>

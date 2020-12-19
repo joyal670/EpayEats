@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/fragment_dashboard_"
+    android:layout_marginBottom="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:sliderAnimationDuration="1000"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderIndicatorAnimationDuration="1000"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="3"
+            app:sliderStartAutoCycle="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Main Categorys"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_dashboard_main_menu_recyclerview"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sub Categorys"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="13sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_dashboard_sub_menu_recyclerview"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nearby Restaurants"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textSize="15sp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_dashboard_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+

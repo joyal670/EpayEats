@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CartMainCatagory_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sample1"
+            android:text="Please Confirm your Orders Before Checkout"
+            android:textColor="@color/colorBlack"
+            android:textAllCaps="true"
+            android:textStyle="bold"/>
+
+        <ListView
+            android:layout_below="@+id/sample1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cartListViewMain"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="?attr/actionBarSize"/>
+
+        <Button
+            android:id="@+id/cartCheckOutMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHECKOUT"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorNewBlue"
+            android:textAllCaps="true"
+            android:layout_alignParentBottom="true"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

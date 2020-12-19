@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.epayeats.epayeatsuser">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name=".Application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon1"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/appicon1"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/Theme.EpayEats"
+        tools:replace="android:icon">
+        <activity android:name=".Activity.CartMainCatagory_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Activity.WelcomeActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Maps.NewLocation_MapsActivity"
+            android:label="@string/title_activity_new_location__maps" />
+        <activity
+            android:name=".Maps.ChangeLocation_MapsActivity"
+            android:label="@string/title_activity_change_location__maps" />
+        <activity
+            android:name=".Activity.OrderPlaced_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.Checkout_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.HomeSubMenuCatagory_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.HomeMainCatagory_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.ShopSelected_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.Permission_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.Login_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.MainActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- <uses-library -->
+        <!-- android:name="org.apache.http.legacy" -->
+        <!-- android:required="false" /> -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

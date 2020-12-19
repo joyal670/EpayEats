@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@color/colorBlack"
+            app:subtitleTextColor="@color/colorBlack"/>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_layout">
+
+    </FrameLayout>
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/welcome_bottomnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mbn_backgroundBottomColor="@color/colorCardView"
+        app:mbn_countBackgroundColor="#ff6f00"
+        app:mbn_countTextColor="#ffffff"
+        app:mbn_defaultIconColor="#000000"
+        app:mbn_rippleColor="#000000"
+        android:layout_gravity="bottom"
+        app:mbn_selectedIconColor="#000000"
+        app:mbn_shadowColor="#1f212121"
+        android:layout_alignParentBottom="true"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

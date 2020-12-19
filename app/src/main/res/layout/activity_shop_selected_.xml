@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ShopSelected_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorNewCard"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbarshop"
+                android:background="@color/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:titleTextColor="@color/colorBlack"
+                app:subtitleTextColor="@color/colorBlack"/>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="10dp"
+            android:elevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/shop_selected_image"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_launcher" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/shop_selected_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:text="xxxx xxxx xxxx "
+                            android:textColor="@color/colorBlack"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/shop_selected_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="xxxxx"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/shop_selected_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="00000"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal"
+                            android:weightSum="16">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="15dp"
+                                android:layout_weight="4"
+                                android:src="@drawable/faasi" />
+
+                            <TextView
+                                android:id="@+id/shop_selected_licence"
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="6"
+                                android:gravity="left|center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorBlack"
+                                android:text="0"/>
+
+                            <TextView
+                                android:id="@+id/shop_selected_status"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="4"
+                                android:gravity="right"
+                                android:text="Status"
+                                android:textColor="@color/colorBlack" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="2"
+                                android:layout_gravity="center"
+                                android:visibility="gone"
+                                android:id="@+id/shop_selected_status_red"
+                                android:src="@color/colorRed"/>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="2"
+                                android:visibility="gone"
+                                android:layout_gravity="center"
+                                android:id="@+id/shop_selected_status_green"
+                                android:src="@color/main_green_color"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/horizontalline" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shop_selected_sub_catagorey_recyclerview"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available menus"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="13sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:id="@+id/shop_selected_menu_listview"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/sheet_cart"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

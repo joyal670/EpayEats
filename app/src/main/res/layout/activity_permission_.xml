@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activity.Permission_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/map" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please allow us to access your location permission"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/text_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Fetching your current location, please wait !!!"
+                android:visibility="gone"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/activity_go_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimary"
+                android:textAllCaps="true"
+                android:text="Go"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_location"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:background="@color/colorNewBlue"
+                android:text="Get current location"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/permission_activity_manual_location_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorNewRed"
+                android:gravity="center"
+                android:text="Choose location"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

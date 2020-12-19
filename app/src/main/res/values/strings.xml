@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EpayEats</string>
+    <string name="open" />
+    <string name="close" />
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_change_location__maps">Map</string>
+    <string name="title_activity_new_location__maps">Map</string>
+</resources>
